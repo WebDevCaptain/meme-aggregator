@@ -7,6 +7,7 @@ const s3 = new S3({
   secretAccessKey: process.env.FILEBASE_SECRET,
   s3ForcePathStyle: true,
   apiVersion: "2006-03-01",
+  signatureVersion: "v4",
 });
 
 const Bucket = process.env.S3_BUCKET as string;
